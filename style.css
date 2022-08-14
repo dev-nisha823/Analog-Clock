@@ -1,0 +1,99 @@
+
+body{
+    background-image:radial-gradient(white,grey,black,pink);
+}
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px rgb(241, 236, 236);
+    font-size:50px;
+}
+
+
+/* parent clock container */
+
+#clockContainer{
+    position:relative;
+    margin:auto;
+    /*border:1px solid black;
+    */height:40vw;
+    width:40vw;
+    background: url("../Analog clock/analog\ clock.webp") no-repeat;
+    background-size: 100%;
+    border-radius:50%;
+}
+
+/* hour hand css */
+
+#hour , #minute , #second{
+   position:absolute;
+   border-radius:10px;
+   transform-origin: bottom;
+   background-color:white;
+}
+#hour{
+    /* background-color: rgb(11, 255, 49); */
+    width: 2%;
+    height: 25%;
+    top: 25.4%;
+    left: 48.9%;
+    opacity: 0.8;
+}
+#minute{
+    /* background-color:rgb(255, 204, 3); */
+    width:1.6%;
+    height:30%;
+    top: 20.4%;
+    left: 49.1%;
+    opacity:0.8;
+}
+#second{
+    /* background-color:rgb(246, 7, 7); */
+    width:1%;
+    height: 38%;
+    top: 12.4%;
+    left:49.5%;
+    opacity:0.8;
+}
+
+#about-clock{
+    background-color: black;
+    position: absolute;
+    top: 105%;
+    left: 10%;
+    text-align: Center;
+    font-size: 18px;
+    right: 10%;
+    color:white;
+}
+#clock-quotes{
+    color:rgb(244, 30, 255);
+    /* text-shadow:2px 2px 2px rgb(13, 23, 222); */
+    font-size:20px;
+    font-weight:bold;
+}
+
+h3{
+    font-size: 60px;
+    margin-top: 15%;
+    text-align:Center;
+    color:rgb(246, 245, 245);
+    text-shadow:3px 3px 2px black;
+}
+.ancient-clock-container{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    margin-top:3%;
+    overflow: hidden;
+}
+.ancient-clock{
+    margin-left:20px;
+}
+img{
+    height:200px;
+    width:200px;
+    border-radius:50%;
+}
